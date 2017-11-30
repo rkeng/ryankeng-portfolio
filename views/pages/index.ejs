@@ -1,66 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <% include ../partials/header.ejs %>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/8f539d3d8d.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
-
 <body>
-
-  <% include ../partials/nav.ejs %>
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
-    <h1>Getting Started with Node on Heroku</h1>
-    <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started with Node</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/node-js-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" class="alert-link">Getting Started with Node on Heroku</a> tutorial.
+  <div id="about">
+    <div class="image-cropper"><img class="dp" src="/images/profile_pic.jpg"></div>
+    <div id="nameDesc">
+      <h1>RYAN KENG</h1>
+      <div id="desc">
+        <p>I'm a third-year Computer Science major at UCSD. I was a Web Development Intern at Foxconn Technology Group during summer 2017. I'm currently looking for internship opportunities for summer 2018.</p>
+      </div>
+    </div>
   </div>
   <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/node-js-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/node-js-getting-started/blob/master/package.json">package.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
-      </ul>
+  <div id="experience">
+    <h1>EXPERIENCE</h1>
+    <div class="company">
+      <div class="card" style="width: 50%; margin-top: 20px;">
+        <img class="card-img-top" src="/images/foxconn-logo.png" alt="Card image cap" style="width: 100%;padding-left: 10px;padding-right: 10px;">
+        <div class="card-block">
+          <h4 class="card-title">Web Development Intern</h4>
+          <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Foxconn Technology Group, Shenzhen, China</p>
+          <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i> 07/2017 - 08/2017</p>
+          <div class="collapse" id="collapseExample">
+                • Developed five webpages with Java EE and Oracle PL/SQL, built on Apache Tomcat server <br/>
+                • Assisted the Java web development team by implementing new features to our project, e.g. drag and drop effects and interactive charting <br/>
+                • Coordinated with team development standards and agile software development <br/>
+                • Performed cross-browser testing for functionality and style
+          </div>
+            <a href="javascript:void(0)" class="card-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="if(this.innerHTML =='Learn More'){this.innerHTML = 'Collapse'}else{this.innerHTML = 'Learn More'}">Learn More</a>
+            <a target="_blank" href="https://drive.google.com/drive/folders/0BywOL8lLiDdxOUk5Z3g3dVE1TUk?usp=sharing" class="card-link">See demos</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/node-js-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
-      </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
   </div>
-</div>
-
-
+  <hr>
+  <div id="projects">
+  </div>
 </body>
 </html>
