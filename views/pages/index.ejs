@@ -12,39 +12,96 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
-  <div id="about">
-    <div class="image-cropper"><img class="dp" src="/images/profile_pic.jpg"></div>
-    <div id="nameDesc">
-      <h1>RYAN KENG</h1>
-      <div id="desc">
-        <p>I'm a third-year Computer Science major at UCSD. I was a Web Development Intern at Foxconn Technology Group during summer 2017. I'm currently looking for internship opportunities for summer 2018.</p>
+  <div class="container-fluid" style="text-align:center;">
+    <div class="row">
+      <div class="col">
+        <div class="image-cropper"><img class="dp" src="/images/profile_pic.jpg"></div>
+      </div>
+      <div class="col">
+          <div class="row" style="height: 70px">
+            <h1 style="margin: auto;">RYAN KENG</h1>
+          </div>
+          <div class="row">
+            <p>I'm a third-year Computer Science major at UCSD. I was a Web Development Intern at Foxconn Technology Group during summer 2017. I'm currently looking for internship opportunities for summer 2018.</p>
+          </div>
       </div>
     </div>
   </div>
+
   <hr>
+
   <div id="experience">
-    <h1>EXPERIENCE</h1>
+    <h2>Work Experience</h2>
     <div class="company">
-      <div class="card" style="width: 50%; margin-top: 20px;">
-        <img class="card-img-top" src="/images/foxconn-logo.png" alt="Card image cap" style="width: 100%;padding-left: 10px;padding-right: 10px;">
+      <div class="card" style="width: 100%; max-width: 400px; margin-top: 20px;">
+        <img class="card-img-top" src="/images/foxconn-logo.png" alt="Card image cap" style="width: 90%;margin:auto;">
         <div class="card-block">
           <h4 class="card-title">Web Development Intern</h4>
           <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Foxconn Technology Group, Shenzhen, China</p>
           <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i> 07/2017 - 08/2017</p>
-          <div class="collapse" id="collapseExample">
+          <div class="collapse" id="collapseFoxconn" style="padding-bottom: 15px;">
                 • Developed five webpages with Java EE and Oracle PL/SQL, built on Apache Tomcat server <br/>
                 • Assisted the Java web development team by implementing new features to our project, e.g. drag and drop effects and interactive charting <br/>
                 • Coordinated with team development standards and agile software development <br/>
                 • Performed cross-browser testing for functionality and style
           </div>
-            <a href="javascript:void(0)" class="card-link" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="if(this.innerHTML =='Learn More'){this.innerHTML = 'Collapse'}else{this.innerHTML = 'Learn More'}">Learn More</a>
+            <a href="javascript:void(0)" class="card-link" data-toggle="collapse" data-target="#collapseFoxconn" aria-expanded="false" aria-controls="collapseFoxconn" onclick="if(this.innerHTML =='Learn More'){this.innerHTML = 'Collapse'}else{this.innerHTML = 'Learn More'}">Learn More</a>
             <a target="_blank" href="https://drive.google.com/drive/folders/0BywOL8lLiDdxOUk5Z3g3dVE1TUk?usp=sharing" class="card-link">See demos</a>
         </div>
       </div>
     </div>
   </div>
+
   <hr>
+
   <div id="projects">
+    <h2>Projects</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 400px;">
+            <img class="card-img-top" src="/images/sd-hacks-logo.png" alt="Card image cap" style="width: 50%;margin: auto;">
+            <div class="card-block">
+              <h4 class="card-title">Untitled Project</h4>
+              <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> SD Hacks, UCSD, La Jolla, CA</p>
+              <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i> 10/2017</p>
+              <div class="collapse" id="collapseTrackerJAR" style="padding-bottom: 15px;">
+                    • Attempted to build an augmented reality web application that locates where the user last parked their car <br/>
+                    • Implemented geolocation-tracking with HTML Geolocation API, location visualization with Google Maps API, video data streaming with Media Capture and Streams API
+              </div>
+                <a href="javascript:void(0)" class="card-link" data-toggle="collapse" data-target="#collapseTrackerJAR" aria-expanded="false" aria-controls="collapseTrackerJAR" onclick="if(this.innerHTML =='Learn More'){this.innerHTML = 'Collapse'}else{this.innerHTML = 'Learn More'}">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 100%; max-width: 400px;">
+            <img class="card-img-top" src="/images/ucsdflyers-logo.png" alt="Card image cap" style="width: 90%;margin: auto;padding-top: 50px;padding-bottom: 50px;">
+            <div class="card-block">
+              <h4 class="card-title">UCSD Flyers</h4>
+              <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> UCSD, La Jolla, CA</p>
+              <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i> 01/2017 - 03/2017</p>
+              <div class="collapse" id="collapseUCSDFlyers" style="padding-bottom: 15px;">
+                • Developed a student organization promotion platform with React and Firebase, built on Node.js <br/>
+                • Coordinated use cases, user stories, and requirements <br/>
+                • Recognized as the most significant contributor in peer reviews
+              </div>
+                <a href="javascript:void(0)" class="card-link" data-toggle="collapse" data-target="#collapseUCSDFlyers" aria-expanded="false" aria-controls="collapseUCSDFlyers" onclick="if(this.innerHTML =='Learn More'){this.innerHTML = 'Collapse'}else{this.innerHTML = 'Learn More'}">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="contact" style="text-align: center">
+    <h2>Reach me at</h2>
+    <div>
+      <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
+      <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+      <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+      <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+    </div>
   </div>
 </body>
 </html>
