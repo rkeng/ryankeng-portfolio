@@ -48,6 +48,13 @@ hr.style-one {
     top: -30px;
 }
 
+#skills .row {
+    border-top: 1px solid;
+    border-color: #888;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #about, #skills, #experience, #projects, #contact {
     padding-top: 66px;
 }
