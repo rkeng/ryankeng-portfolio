@@ -1,6 +1,8 @@
 body {
-	padding: 10%;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    position: relative;
+    margin: 5%;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: Ubuntu;
 }
 
 a {
@@ -44,4 +46,8 @@ hr.style-one {
     padding-left: 30px;
     position: relative;
     top: -30px;
+}
+
+#about, #skills, #experience, #projects, #contact {
+    padding-top: 66px;
 }

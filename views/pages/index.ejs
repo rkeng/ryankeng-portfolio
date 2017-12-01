@@ -9,9 +9,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/8f539d3d8d.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example2">
+  <nav id="navbar-example2" class="navbar fixed-top navbar-expand-xl navbar-light" style="background-color: #e3f2fd;overflow: auto;">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">contact</a>
+      </li>
+    </ul>
+  </nav>
+
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+  <div id="about">
   <div class="container-fluid" style="text-align:center;">
     <div class="row">
       <div class="col">
@@ -27,11 +52,39 @@
       </div>
     </div>
   </div>
+</div>
+
+  <hr>
+
+  <div id="skills">
+    <h2 style="text-align: center">Skills</h2>
+    <div style="text-align: center; font-size: 4rem; color: #808080;">
+      <h4>Languages</h4>
+      <i class="devicon-html5-plain-wordmark colored"></i>
+      <i class="devicon-css3-plain-wordmark colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-java-plain-wordmark colored"></i>
+      <i class="devicon-c-plain colored"></i>
+      <i class="devicon-cplusplus-plain colored"></i>
+      <h4>Frameworks</h4>
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+      <i class="devicon-express-original-wordmark colored"></i>
+      <i class="devicon-jquery-plain-wordmark colored"></i>
+      <i class="devicon-react-original-wordmark colored"></i>
+      <i class="devicon-tomcat-line-wordmark colored"></i>
+      <h4>Tools</h4>
+      <i class="devicon-github-plain-wordmark colored"></i>
+      <i class="devicon-heroku-plain-wordmark colored"></i>
+      <i class="devicon-nodejs-plain colored"></i>
+      <i class="devicon-oracle-original colored"></i>
+      <i class="devicon-postgresql-plain-wordmark colored"></i>
+    </div>
+  </div>
 
   <hr>
 
   <div id="experience">
-    <h2 style="text-align: center">Work Experience</h2>
+    <h2 style="text-align: center">Experience</h2>
       <div class="card" style="width: 100%; max-width: 400px; margin:auto;">
         <img class="card-img-top" src="/images/foxconn-logo.png" alt="Card image cap" style="width: 90%;margin:auto;">
         <div class="card-block">
@@ -93,7 +146,7 @@
   </div>
 
   <hr>
-  <div class="contact" style="text-align: center">
+  <div id="contact" style="text-align: center">
     <h2>Reach me at</h2>
     <div>
       <a href="https://www.facebook.com/RyanH.Keng"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
@@ -101,6 +154,8 @@
       <a href="https://www.linkedin.com/in/ryan-keng/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
       <a href="mailto:rkeng@ucsd.edu"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
     </div>
+  </div>
+
   </div>
 </body>
 </html>
