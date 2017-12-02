@@ -6,8 +6,8 @@ body {
 }
 
 a {color:#00B7FF;}      /* unvisited link */
-a:visited {color:#00B7FF;}  /* visited link */
 a:active {color:#00B7FF;}  /* selected link */
+a:hover {color:#7c7c7c;}
 
 hr.style-one {
     border: 0;
@@ -18,6 +18,25 @@ hr.style-one {
 
 #experience {
 	padding: 10px;
+}
+
+.nav-item {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-pills .nav-link {
+    color: #000000;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    color: #000000;
+    cursor: default;
+    background-color: #cccccc;
+}
+
+.rk-logo {
+    height: 40px;
 }
 
 .image-cropper {
@@ -56,5 +75,5 @@ hr.style-one {
 }
 
 #about, #skills, #experience, #projects, #contact {
-    padding-top: 66px;
+    padding-top: 86px;
 }
