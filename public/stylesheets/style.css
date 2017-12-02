@@ -5,9 +5,9 @@ body {
     font-family: Ubuntu;
 }
 
-a {
-  color: #00B7FF;
-}
+a {color:#00B7FF;}      /* unvisited link */
+a:visited {color:#00B7FF;}  /* visited link */
+a:active {color:#00B7FF;}  /* selected link */
 
 hr.style-one {
     border: 0;

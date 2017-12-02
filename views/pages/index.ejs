@@ -14,27 +14,27 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body data-spy="scroll" data-target="#navbar-example2">
-  <nav id="navbar-example2" class="navbar fixed-top navbar-expand-xl navbar-light" style="background-color: #e3f2fd;overflow: auto;">
+  <nav id="navbar-example2" class="navbar fixed-top navbar-light" style="background-color: #e3f2fd;overflow: auto;">
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#about">about</a>
+        <a class="nav-link js-scroll-trigger" href="#about">about</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills">skills</a>
+        <a class="nav-link js-scroll-trigger" href="#skills">skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#experience">experience</a>
+        <a class="nav-link js-scroll-trigger" href="#experience">experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#projects">projects</a>
+        <a class="nav-link js-scroll-trigger" href="#projects">projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contact">contact</a>
+        <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
       </li>
     </ul>
   </nav>
 
-<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
   <div id="about">
     <div class="container-fluid" style="text-align:center;">
@@ -166,7 +166,18 @@
       <a href="mailto:rkeng@ucsd.edu"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
     </div>
   </div>
+</div>
 
-  </div>
+  <!-- jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="/js/scrolling-nav.js"></script>
 </body>
 </html>
