@@ -74,6 +74,16 @@ hr.style-one {
     padding-bottom: 20px;
 }
 
+
+
+#about {
+
+}
+
+#about, #skills, #experience, #projects {
+    min-height:100vh;
+}
+
 #about, #skills, #experience, #projects, #contact {
-    padding-top: 86px;
+    padding-top: 106px;
 }
