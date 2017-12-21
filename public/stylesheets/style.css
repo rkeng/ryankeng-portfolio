@@ -5,9 +5,22 @@ body {
     font-family: Ubuntu;
 }
 
-a {color:#00B7FF;}      /* unvisited link */
-a:active {color:#00B7FF;}  /* selected link */
-a:hover {color:#7c7c7c;}
+/* general links */
+a:link {color:#00B7FF;}
+a:visited {color:#00B7FF;}
+a:hover {color:#0275d8;}
+
+/* contact links */
+a.resume-link:link, a.resume-link:visited {color:#7c7c7c;}
+a.resume-link:hover {color:#d62129;}
+a.facebook-link:link, a.facebook-link:visited {color:#7c7c7c;}
+a.facebook-link:hover {color:#3b5998;}
+a.github-link:link, a.github-link:visited {color:#7c7c7c;}
+a.github-link:hover {color:#24292e;}
+a.linkedin-link:link, a.linkedin-link:visited {color:#7c7c7c;}
+a.linkedin-link:hover {color:#00a0dc;}
+a.mail-link:link, a.mail-link:visited {color:#7c7c7c;}
+a.mail-link:hover {color:#f2a60c;}
 
 hr.style-one {
     border: 0;
@@ -72,12 +85,6 @@ hr.style-one {
     border-color: #888;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-
-
-#about {
-
 }
 
 #about, #skills, #experience, #projects {
