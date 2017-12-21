@@ -91,6 +91,10 @@ hr.style-one {
     min-height:100vh;
 }
 
+#contact {
+    min-height: 80vh;
+}
+
 #about, #skills, #experience, #projects, #contact {
     padding-top: 106px;
 }
